@@ -120,10 +120,6 @@ footer.sticky-footer {
   color: #ccc;
 }
 
-.warning.no-result {
-  text-align: center;
-}
-
 th {
   position: sticky;
 }
@@ -147,5 +143,75 @@ th {
 .action-btn {
   border-radius: 50%;
   margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .doc_login-form:first-child {
+    /*margin-top: 0;*/
+    /*margin-bottom: 50px;*/
+    display: none;
+  }
+}
+
+.topbar #sidebarToggleTop {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #dddfeb;
+}
+
+@media (max-width: 768px) {
+  .nav-dropdown > .dropdown-menu > .dropdown-item {
+    font-size: 10.6px;
+    padding: .5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  a.dropdown-toggle.nav-link::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-dropdown {
+    z-index: 99999;
+    width: 104px;
+  }
+}
+
+.nav-dropdown {
+  margin-bottom: 0 !important;
+}
+
+.form-group.pull-right.col-xl-12 > .row > .col-sm-4 {
+  margin-bottom: 15px;
+}
+
+.book-app-form > .row > .col-12 {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .db-amt {
+    font-size: 15px;
+  }
+}
+
+.db-amt-hd {
+  /*font-size: 7px;*/
+}
+
+.db-icon-col {
+  /*display: none;*/
+}
+
+.data-card > .card-body {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .data-card > .card-body > .row > .col-auto > i {
+    font-size: 16px;
+  }
 }
 
