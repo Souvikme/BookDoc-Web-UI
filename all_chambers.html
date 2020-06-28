@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - Brand</title>
+    <meta name="author" content="SRKP Technologies">
+    <meta name="description" content="Doctor Appointment Booking">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=6bb95e10454a78aaf4b0ac792aaf69e2">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css?h=2c0fc24b3d3038317dc51c05339856d0">
+    <link rel="stylesheet" href="assets/css/style.css?h=6b0e8c04481fe6634992c8d736a9e988">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0">
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-briefcase-medical"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>BookDoc</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item" role="presentation"><a class="nav-link shadow-lg" href="dashboard.html"><i class="fas fa-tachometer-alt"></i><span><strong>Dashboard</strong></span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link shadow-lg" href="book_appointment.html"><i class="fas fa-user"></i><span><strong>Book Appointment</strong></span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link shadow-lg" href="book_ot.html"><i class="fas fa-medkit"></i><span><strong>Book OT</strong></span></a></li>
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-item dropdown shadow-lg" style="margin-bottom: 0rem;"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-clipboard-list"></i><span><strong>Today's Works</strong></span></a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="today%27s_appointment.html"><i class="fas fa-stethoscope"></i><strong>Today's Bookings</strong></a><a class="dropdown-item" role="presentation" href="today%27s_ot.html"><i class="fas fa-stethoscope"></i><strong>Today's OT</strong></a></div>
+                        </div>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-item dropdown show shadow-lg" style="margin-bottom: 0rem;"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="true" href="#"><i class="fas fa-search"></i><span><strong>Search</strong></span></a>
+                            <div class="dropdown-menu show" role="menu"><a class="dropdown-item" role="presentation" href="search_appointments.html"><i class="fas fa-stethoscope"></i><strong>Search Appointment</strong></a><a class="dropdown-item" role="presentation" href="search_ot.html"><i class="fas fa-syringe"></i><strong>Search OT</strong></a></div>
+                        </div>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-item dropdown shadow-lg" style="margin-bottom: 0;"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="far fa-calendar-plus"></i><span><strong>Reschedule</strong></span></a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="reschedule_chamber.html"><i class="fas fa-stethoscope"></i><strong>Reschedule Appointment</strong></a><a class="dropdown-item" role="presentation" href="reschedule_ot.html"><i class="fas fa-syringe"></i><strong>Reschedule OT</strong></a></div>
+                        </div>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link shadow-lg" href="todays_call_list.html"><i class="fas fa-phone-alt"></i><span><strong>Today's Calls</strong></span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link shadow-lg" href="all_patients.html"><i class="fas fa-bed"></i><span><strong>Patients</strong></span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link shadow-lg" href="all_doctors.html"><i class="fas fa-users"></i><span><strong>Doctors</strong></span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link shadow-lg active" href="all_chambers.html"><i class="fas fa-clinic-medical"></i><span><strong>Chambers</strong></span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link shadow-lg" href="expenditure.html"><i class="fas fa-money-check-alt"></i><span><strong>Expenditure</strong></span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand shadow mb-4 topbar static-top bg-gradient-primary">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <ul class="nav navbar-nav flex-nowrap ml-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" role="menu" aria-labelledby="searchDropdown">
+                                    <form class="form-inline mr-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="badge badge-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
+                                        role="menu" id="notification-panel">
+                                        <h6 class="dropdown-header">alerts center</h6>
+                                        <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
+                                            <div class="mr-3">
+                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 12, 2019</span>
+                                                <p>A new monthly report is ready to download!</p>
+                                            </div>
+                                        </a>
+                                        <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
+                                            <div class="mr-3">
+                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 7, 2019</span>
+                                                <p>$290.29 has been deposited into your account!</p>
+                                            </div>
+                                        </a>
+                                        <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
+                                            <div class="mr-3">
+                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 2, 2019</span>
+                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                            </div>
+                                        </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-envelope fa-fw"></i><span class="badge badge-danger badge-counter">7</span></a>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
+                                        role="menu">
+                                        <h6 class="dropdown-header">alerts center</h6>
+                                        <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar4.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="font-weight-bold">
+                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                            </div>
+                                        </a>
+                                        <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar2.jpeg">
+                                                <div class="status-indicator"></div>
+                                            </div>
+                                            <div class="font-weight-bold">
+                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                            </div>
+                                        </a>
+                                        <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar3.jpeg">
+                                                <div class="bg-warning status-indicator"></div>
+                                            </div>
+                                            <div class="font-weight-bold">
+                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                            </div>
+                                        </a>
+                                        <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar5.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="font-weight-bold">
+                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                            </div>
+                                        </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
+                                </div>
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown"></div>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow" role="presentation">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-none d-lg-inline mr-2 text-white-600 small">admin</span><img class="border rounded-circle img-profile" src="assets/img/doctor-book.jpg?h=a78c11ac9558f51e8969d72d3e0a6226"></a>
+                                    <div
+                                        class="dropdown-menu shadow dropdown-menu-right animated--grow-in how" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user-plus fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Add new user</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="index.html"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></div>
+                    </div>
+                    </li>
+                    </ul>
+            </div>
+            </nav>
+            <div class="container-fluid">
+                <h3 class="text-dark mb-4">All Chambers</h3>
+                <div class="card shadow">
+                    <div class="card-header py-3">
+                        <p class="text-primary m-0 font-weight-bold">Chamber list</p>
+                    </div>
+                    <div class="card-body" style="height: 65vh;overflow-y: scroll;">
+                        <div class="col-md-12 search-table-col">
+                            <div class="form-group pull-right col-xl-12">
+                                <div class="row">
+                                    <div class="col-xl-3"><button class="btn btn-primary btn-block" type="button" data-toggle="modal" data-target="#add-chamber-modal"><strong>Add new chamber</strong></button></div>
+                                    <div class="col-xl-3 offset-xl-6"><input class="form-control-sm search form-control" type="text" placeholder="Search by typing here.."></div>
+                                </div>
+                            </div>
+                            <div class="table-responsive table results">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th id="trs-hd">SL. No.</th>
+                                            <th id="trs-hd">Chamber Name</th>
+                                            <th id="trs-hd">Contact Number</th>
+                                            <th id="trs-hd">Address</th>
+                                            <th id="trs-hd-1">Contact Person</th>
+                                            <th id="trs-hd-2">Chamber Time</th>
+                                            <th class="text-center" id="trs-hd">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>Souvik Kundu</td>
+                                            <td>9876543210</td>
+                                            <td>Jagaddal</td>
+                                            <td>19/06/2020</td>
+                                            <td>14:00 PM</td>
+                                            <td class="text-center"><button class="btn btn-info action-btn" type="button"><i class="fa fa-pencil"></i></button><button class="btn btn-primary action-btn" type="button"><i class="fa fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr class="warning no-result">
+                                            <td colspan="12"><i class="fa fa-warning text-danger"></i>&nbsp; Sorry, No result found !!!</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-white sticky-footer">
+            <div class="container my-auto">
+                <div class="text-center my-auto copyright"><span>Copyright © SRKP Technologies 2020</span></div>
+            </div>
+        </footer>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <form>
+        <div class="modal fade" role="dialog" tabindex="-1" id="add-chamber-modal">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title"><strong>Add new chamber</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body">
+                        <div class="form-row">
+                            <div class="col-xl-6">
+                                <div class="form-group"><label><strong>Chamber name</strong></label><input class="form-control" type="text"></div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="form-group"><label><strong>Address</strong></label><input class="form-control" type="text" inputmode="numeric"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-6">
+                                <div class="form-group"><label><strong>Contact No.</strong></label><input class="form-control" type="text"></div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="form-group"><label><strong>Contact Person</strong></label><input class="form-control" type="text"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-6">
+                                <div class="form-group"><label><strong>Chamber time</strong></label><input class="form-control" type="text"></div>
+                            </div>
+                            <div class="col-xl-6"><label><strong>OT Available</strong></label>
+                                <div class="form-group">
+                                    <div class="custom-control custom-control-inline custom-radio"><input class="custom-control-input" type="radio" id="YES" name="ot_stat" value="YES"><label class="custom-control-label" for="YES"><strong>YES</strong></label></div>
+                                    <div class="custom-control custom-control-inline custom-radio"><input class="custom-control-input" type="radio" id="NO" name="ot_stat" value="NO"><label class="custom-control-label" for="NO"><strong>NO</strong></label></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-right"><button class="btn btn-warning" type="button" data-dismiss="modal"><strong>Close</strong></button><button class="btn btn-primary" type="submit"><strong>Submit</strong></button></div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js?h=08ba999e06fc97f895c72848bddb91c1"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/style.js?h=d41d8cd98f00b204e9800998ecf8427e"></script>
+</body>
+
+</html>
