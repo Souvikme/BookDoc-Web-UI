@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>All Chambers</title>
+    <title>Table - Brand</title>
     <meta name="theme-color" content="#4e73df">
     <meta name="author" content="SRKP Technologies">
     <meta name="description" content="Doctor Appointment Booking">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -221,14 +221,14 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-xl-6">
-                                <div class="form-group"><label><strong>Chamber time</strong></label><input class="form-control" type="text"></div>
-                            </div>
                             <div class="col-xl-6"><label><strong>OT Available</strong></label>
                                 <div class="form-group">
                                     <div class="custom-control custom-control-inline custom-radio"><input class="custom-control-input" type="radio" id="YES" name="ot_stat" value="YES"><label class="custom-control-label" for="YES"><strong>YES</strong></label></div>
-                                    <div class="custom-control custom-control-inline custom-radio"><input class="custom-control-input" type="radio" id="NO" name="ot_stat" value="NO"><label class="custom-control-label" for="NO"><strong>NO</strong></label></div>
+                                    <div class="custom-control custom-control-inline custom-radio"><input class="custom-control-input" type="radio" id="NO" name="ot_stat" value="NO" checked=""><label class="custom-control-label" for="NO"><strong>NO</strong></label></div>
                                 </div>
+                            </div>
+                            <div class="col-xl-6" id="en_bed_typeYES" style="display: none;">
+                                <div class="form-group"><label><strong>Bed Type:</strong></label><select class="custom-select" multiple=""><optgroup label="Select multiple"><option value="1">-- Select bed type --</option><option value="2">General</option><option value="2">Cabin</option><option value="3">Semi Cabin</option></optgroup></select></div>
                             </div>
                         </div>
                     </div>
@@ -237,9 +237,9 @@
             </div>
         </div>
     </form>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/style.js"></script>

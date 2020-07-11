@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Book OT</title>
+    <title>Blank Page - Brand</title>
     <meta name="theme-color" content="#4e73df">
     <meta name="author" content="SRKP Technologies">
     <meta name="description" content="Doctor Appointment Booking">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -146,6 +146,49 @@
             <div class="container-fluid">
                 <h3 class="text-dark mb-4">Book Operation Theatre</h3>
                 <div class="row mb-3">
+                    <div class="col-lg-4 col-xl-12">
+                        <div class="card shadow">
+                            <div class="card-header py-3">
+                                <p class="text-primary m-0 font-weight-bold">Total OTs on:&nbsp;<span>20/06/2020</span></p>
+                            </div>
+                            <div class="card-body">
+                                <div class="col-md-12 search-table-col">
+                                    <div class="form-group pull-right col-lg-3"><input class="form-control-sm search form-control" type="text" placeholder="Search by typing here.."></div><span class="counter pull-right"></span>
+                                    <div class="table-responsive table results today_bookings text-nowrap">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>SL. No.</th>
+                                                    <th>Date</th>
+                                                    <th>Patient's Name</th>
+                                                    <th>Contact Number</th>
+                                                    <th>Time</th>
+                                                    <th>Doctor</th>
+                                                    <th>Place</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>01</td>
+                                                    <td>17/06/2020</td>
+                                                    <td>Souvik Kundu</td>
+                                                    <td>7278491931</td>
+                                                    <td>17:00 PM</td>
+                                                    <td>Dr. Diptendra K. Sarkar</td>
+                                                    <td>Suraksha Diagnostic</td>
+                                                </tr>
+                                                <tr class="warning no-result">
+                                                    <td colspan="12"><i class="fa fa-warning text-danger"></i>&nbsp; Sorry, No result found !!!</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
                     <div class="col-lg-4">
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
@@ -257,6 +300,11 @@
                                                     <div class="form-group"><label for="first_name"><strong>Bed type</strong><br></label><select class="custom-select"><optgroup label="Select only one"><option value="0" selected="">-- Select Bed Type --</option><option value="1">General</option><option value="2">Semi Cabin</option><option value="3">Cabin</option></optgroup></select></div>
                                                 </div>
                                             </div>
+                                            <div class="form-row">
+                                                <div class="col-12 col-xl-6">
+                                                    <div class="form-group"><label for="first_name"><strong>Assistants</strong><br></label><small class="form-text text-muted">Separate names by comma</small><textarea class="form-control" rows="3"></textarea></div>
+                                                </div>
+                                            </div>
                                             <div class="form-group"><button class="btn btn-primary btn-sm" type="submit"><strong>Book Appointment</strong></button></div>
                                         </div>
                                     </div>
@@ -273,9 +321,9 @@
             </div>
         </footer>
     </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/style.js"></script>

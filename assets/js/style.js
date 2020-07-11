@@ -76,3 +76,13 @@ $(document).ready(function() {
     else {$('.no-result').hide();}
 		  });
 });
+
+
+$(document).ready(function() {
+  $("input[name$='ot_stat']").click(function() {
+      var test = $(this).val();
+
+      $("#en_bed_typeYES").hide();
+      $("#en_bed_type" + test).show();
+  });
+});
