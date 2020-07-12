@@ -94,7 +94,7 @@
                                         role="menu">
                                         <h6 class="dropdown-header">alerts center</h6>
                                         <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar4.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
                                                 <div class="bg-success status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
@@ -103,7 +103,7 @@
                                             </div>
                                         </a>
                                         <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar2.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
                                                 <div class="status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
@@ -112,7 +112,7 @@
                                             </div>
                                         </a>
                                         <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar3.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
                                                 <div class="bg-warning status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
@@ -121,7 +121,7 @@
                                             </div>
                                         </a>
                                         <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar5.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
                                                 <div class="bg-success status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
@@ -178,7 +178,8 @@
                                             <td class="text-nowrap">Jagaddal</td>
                                             <td class="text-nowrap">19/06/2020</td>
                                             <td class="text-nowrap">14:00 PM</td>
-                                            <td class="text-nowrap text-center"><button class="btn btn-info action-btn" type="button"><i class="fa fa-pencil"></i></button><button class="btn btn-primary action-btn" type="button"><i class="fa fa-trash"></i></button></td>
+                                            <td class="text-nowrap text-center"><a class="btn btn-info action-btn" role="button" href="javascript:void(0);" data-toggle="modal" data-target="#edit-chamber-modal"><i class="fa fa-pencil"></i></a><a class="btn btn-danger action-btn" role="button"
+                                                    href="javascript:void(0);" data-toggle="modal" data-target="#delete-chamber-confirm"><i class="fa fa-trash"></i></a></td>
                                         </tr>
                                         <tr class="warning no-result">
                                             <td colspan="12"><i class="fa fa-warning text-danger"></i>&nbsp; Sorry, No result found !!!</td>
@@ -197,46 +198,108 @@
             </div>
         </footer>
     </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
-    <form>
-        <div class="modal fade" role="dialog" tabindex="-1" id="add-chamber-modal">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title"><strong>Add new chamber</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                    <div class="modal-body">
-                        <div class="form-row">
-                            <div class="col-xl-6">
-                                <div class="form-group"><label><strong>Chamber name</strong></label><input class="form-control" type="text"></div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="form-group"><label><strong>Address</strong></label><input class="form-control" type="text" inputmode="numeric"></div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-xl-6">
-                                <div class="form-group"><label><strong>Contact No.</strong></label><input class="form-control" type="text"></div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="form-group"><label><strong>Contact Person</strong></label><input class="form-control" type="text"></div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-xl-6"><label><strong>OT Available</strong></label>
-                                <div class="form-group">
-                                    <div class="custom-control custom-control-inline custom-radio"><input class="custom-control-input" type="radio" id="YES" name="ot_stat" value="YES"><label class="custom-control-label" for="YES"><strong>YES</strong></label></div>
-                                    <div class="custom-control custom-control-inline custom-radio"><input class="custom-control-input" type="radio" id="NO" name="ot_stat" value="NO" checked=""><label class="custom-control-label" for="NO"><strong>NO</strong></label></div>
+    <!-- Start: All Modals -->
+    <div>
+        <!-- Start: Add chamber modal -->
+        <form>
+            <div class="modal fade" role="dialog" tabindex="-1" id="add-chamber-modal">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"><strong>Add new chamber</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                        <div class="modal-body">
+                            <div class="form-row">
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Chamber name</strong></label><input class="form-control" type="text"></div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Address</strong></label><input class="form-control" type="text" inputmode="numeric"></div>
                                 </div>
                             </div>
-                            <div class="col-xl-6" id="en_bed_typeYES" style="display: none;">
-                                <div class="form-group"><label><strong>Bed Type:</strong></label><select class="custom-select" multiple=""><optgroup label="Select multiple"><option value="1">-- Select bed type --</option><option value="2">General</option><option value="2">Cabin</option><option value="3">Semi Cabin</option></optgroup></select></div>
+                            <div class="form-row">
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Contact No.</strong></label><input class="form-control" type="text"></div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Contact Person</strong></label><input class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-6"><label><strong>OT Available</strong></label>
+                                    <div class="form-group">
+                                        <div class="custom-control custom-control-inline custom-radio"><input class="custom-control-input" type="radio" id="YES" name="ot_stat" value="YES"><label class="custom-control-label" for="YES"><strong>YES</strong></label></div>
+                                        <div class="custom-control custom-control-inline custom-radio"><input class="custom-control-input" type="radio" id="NO" name="ot_stat" value="NO" checked=""><label class="custom-control-label" for="NO"><strong>NO</strong></label></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6" id="en_bed_typeYES" style="display: none;">
+                                    <div class="form-group"><label><strong>Bed Type:</strong></label><select class="custom-select" multiple=""><optgroup label="Select multiple"><option value="1">-- Select bed type --</option><option value="2">General</option><option value="2">Cabin</option><option value="3">Semi Cabin</option></optgroup></select></div>
+                                </div>
                             </div>
                         </div>
+                        <div class="modal-footer text-right"><button class="btn btn-warning" type="button" data-dismiss="modal"><strong>Close</strong></button><button class="btn btn-primary" type="submit"><strong>Submit</strong></button></div>
                     </div>
-                    <div class="modal-footer text-right"><button class="btn btn-warning" type="button" data-dismiss="modal"><strong>Close</strong></button><button class="btn btn-primary" type="submit"><strong>Submit</strong></button></div>
+                </div>
+            </div>
+        </form>
+        <!-- End: Add chamber modal -->
+        <!-- Start: Edit Chamber Modal -->
+        <form>
+            <div class="modal fade" role="dialog" tabindex="-1" id="edit-chamber-modal">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"><strong>Update chamber details</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                        <div class="modal-body">
+                            <div class="form-row">
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Chamber name</strong></label><input class="form-control" type="text"></div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Address</strong></label><input class="form-control" type="text" inputmode="numeric"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Contact No.</strong></label><input class="form-control" type="text"></div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Contact Person</strong></label><input class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-6"><label><strong>OT Available</strong></label>
+                                    <div class="form-group">
+                                        <div class="custom-control custom-control-inline custom-radio"><input class="custom-control-input" type="radio" id="YES" name="ot_stat" value="YES"><label class="custom-control-label" for="YES"><strong>YES</strong></label></div>
+                                        <div class="custom-control custom-control-inline custom-radio"><input class="custom-control-input" type="radio" id="NO" name="ot_stat" value="NO" checked=""><label class="custom-control-label" for="NO"><strong>NO</strong></label></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6" id="en_bed_typeYES" style="display: none;">
+                                    <div class="form-group"><label><strong>Bed Type:</strong></label><select class="custom-select" multiple=""><optgroup label="Select multiple"><option value="1">-- Select bed type --</option><option value="2">General</option><option value="2">Cabin</option><option value="3">Semi Cabin</option></optgroup></select></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer text-right"><button class="btn btn-warning" type="button" data-dismiss="modal"><strong>Close</strong></button><button class="btn btn-primary" type="submit"><strong>Submit</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- End: Edit Chamber Modal -->
+        <div class="modal fade" role="dialog" tabindex="-1" id="delete-chamber-confirm">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title"><strong>Are you sure?</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xl-12 mb-3"><button class="btn btn-danger btn-block" type="button"><strong>Yes, delete</strong></button></div>
+                            <div class="col-xl-12"><button class="btn btn-warning btn-block" type="button" data-dismiss="modal"><strong>Cancel</strong></button></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </form>
+    </div>
+    <!-- End: All Modals -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>

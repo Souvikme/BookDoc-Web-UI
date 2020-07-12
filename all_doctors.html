@@ -94,7 +94,7 @@
                                         role="menu">
                                         <h6 class="dropdown-header">alerts center</h6>
                                         <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar4.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
                                                 <div class="bg-success status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
@@ -103,7 +103,7 @@
                                             </div>
                                         </a>
                                         <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar2.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
                                                 <div class="status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
@@ -112,7 +112,7 @@
                                             </div>
                                         </a>
                                         <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar3.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
                                                 <div class="bg-warning status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
@@ -121,7 +121,7 @@
                                             </div>
                                         </a>
                                         <a class="shadow-lg d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar5.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
                                                 <div class="bg-success status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
@@ -183,7 +183,8 @@
                                                 </ol>
                                             </td>
                                             <td class="text-nowrap">1200</td>
-                                            <td class="text-nowrap"><button class="btn btn-info action-btn" type="button"><i class="fa fa-pencil"></i></button><button class="btn btn-primary action-btn" type="button"><i class="fa fa-trash"></i></button></td>
+                                            <td class="text-nowrap"><button class="btn btn-info action-btn" type="button" data-toggle="modal" data-target="#edit-doctor-modal"><i class="fa fa-pencil"></i></button><button class="btn btn-danger action-btn" type="button" data-toggle="modal"
+                                                    data-target="#delete-doctor-confirm"><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>02</td>
@@ -258,36 +259,88 @@
             </div>
         </footer>
     </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
-    <form>
-        <div class="modal fade" role="dialog" tabindex="-1" id="add-doctor-modal">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Start: All Modals -->
+    <div>
+        <!-- Start: Add doctor modal -->
+        <form>
+            <div class="modal fade" role="dialog" tabindex="-1" id="add-doctor-modal">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"><strong>Add new doctor</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                        <div class="modal-body">
+                            <div class="form-row">
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Doctor Name</strong></label><input class="form-control" type="text"></div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Fees</strong></label><input class="form-control" type="text" inputmode="numeric"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Contact No.</strong></label><input class="form-control" type="text"></div>
+                                    <div class="form-group"><label><strong>Email Address</strong></label><input class="form-control form-control-sm" type="text"></div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Chambers:</strong></label><select class="custom-select" multiple=""><optgroup label="Select multiple at once"><option value="1">Suraksha Diagnostic</option><option value="">Apollo Nursing Home</option><option value="">Samariton Nursing Home</option></optgroup></select></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer text-right"><button class="btn btn-warning" type="button" data-dismiss="modal"><strong>Close</strong></button><button class="btn btn-primary" type="submit"><strong>Submit</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- End: Add doctor modal -->
+        <!-- Start: Edit Chamber Modal -->
+        <form>
+            <div class="modal fade" role="dialog" tabindex="-1" id="edit-doctor-modal">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"><strong>Update doctor details</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                        <div class="modal-body">
+                            <div class="form-row">
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Doctor Name</strong></label><input class="form-control" type="text"></div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Fees</strong></label><input class="form-control" type="text" inputmode="numeric"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Contact No.</strong></label><input class="form-control" type="text"></div>
+                                    <div class="form-group"><label><strong>Email Address</strong></label><input class="form-control form-control-sm" type="text"></div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group"><label><strong>Chambers:</strong></label><select class="custom-select" multiple=""><optgroup label="Select multiple at once"><option value="1">Suraksha Diagnostic</option><option value="">Apollo Nursing Home</option><option value="">Samariton Nursing Home</option></optgroup></select></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer text-right"><button class="btn btn-warning" type="button" data-dismiss="modal"><strong>Close</strong></button><button class="btn btn-primary" type="submit"><strong>Submit</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- End: Edit Chamber Modal -->
+        <div class="modal fade" role="dialog" tabindex="-1" id="delete-doctor-confirm">
+            <div class="modal-dialog modal-sm" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title"><strong>Add new doctor</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                        <h4 class="modal-title"><strong>Are you sure?</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                     <div class="modal-body">
-                        <div class="form-row">
-                            <div class="col-xl-6">
-                                <div class="form-group"><label><strong>Doctor Name</strong></label><input class="form-control" type="text"></div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="form-group"><label><strong>Fees</strong></label><input class="form-control" type="text" inputmode="numeric"></div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-xl-6">
-                                <div class="form-group"><label><strong>Contact No.</strong></label><input class="form-control" type="text"></div>
-                                <div class="form-group"><label><strong>Email Address</strong></label><input class="form-control form-control-sm" type="text"></div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="form-group"><label><strong>Chambers:</strong></label><select class="custom-select" multiple=""><optgroup label="Select multiple at once"><option value="1">Suraksha Diagnostic</option><option value="">Apollo Nursing Home</option><option value="">Samariton Nursing Home</option></optgroup></select></div>
-                            </div>
+                        <div class="row">
+                            <div class="col-xl-12 mb-3"><button class="btn btn-danger btn-block" type="button"><strong>Yes, delete</strong></button></div>
+                            <div class="col-xl-12"><button class="btn btn-warning btn-block" type="button" data-dismiss="modal"><strong>Cancel</strong></button></div>
                         </div>
                     </div>
-                    <div class="modal-footer text-right"><button class="btn btn-warning" type="button" data-dismiss="modal"><strong>Close</strong></button><button class="btn btn-primary" type="submit"><strong>Submit</strong></button></div>
                 </div>
             </div>
         </div>
-    </form>
+    </div>
+    <!-- End: All Modals -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
